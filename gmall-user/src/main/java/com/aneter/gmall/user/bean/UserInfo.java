@@ -1,54 +1,51 @@
 package com.aneter.gmall.user.bean;
 
+import java.util.List;
+
 public class UserInfo {
 
-    private Integer id;
-    private String login_name;
-    private String nick_name;
+    private String id;
+    private String loginName;
+    private String nickName;
     private String passwd;
     private String name;
-    private String phone_num;
+    private String phoneNum;
     private String email;
-    private String head_img;
-    private String user_level;
+    private String headImg;
+    private String userLevel;
 
-    public UserInfo() {
+    private List<UserAddress> userAddressList;
+
+    public List<UserAddress> getUserAddressList() {
+        return userAddressList;
     }
 
-    public UserInfo(Integer id, String login_name, String nick_name, String passwd, String name, String phone_num, String email, String head_img, String user_level) {
-        this.id = id;
-        this.login_name = login_name;
-        this.nick_name = nick_name;
-        this.passwd = passwd;
-        this.name = name;
-        this.phone_num = phone_num;
-        this.email = email;
-        this.head_img = head_img;
-        this.user_level = user_level;
+    public void setUserAddressList(List<UserAddress> userAddressList) {
+        this.userAddressList = userAddressList;
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public String getLogin_name() {
-        return login_name;
+    public String getLoginName() {
+        return loginName;
     }
 
-    public void setLogin_name(String login_name) {
-        this.login_name = login_name;
+    public void setLoginName(String loginName) {
+        this.loginName = loginName;
     }
 
-    public String getNick_name() {
-        return nick_name;
+    public String getNickName() {
+        return nickName;
     }
 
-    public void setNick_name(String nick_name) {
-        this.nick_name = nick_name;
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
     }
 
     public String getPasswd() {
@@ -67,12 +64,12 @@ public class UserInfo {
         this.name = name;
     }
 
-    public String getPhone_num() {
-        return phone_num;
+    public String getPhoneNum() {
+        return phoneNum;
     }
 
-    public void setPhone_num(String phone_num) {
-        this.phone_num = phone_num;
+    public void setPhoneNum(String phoneNum) {
+        this.phoneNum = phoneNum;
     }
 
     public String getEmail() {
@@ -83,19 +80,19 @@ public class UserInfo {
         this.email = email;
     }
 
-    public String getHead_img() {
-        return head_img;
+    public String getHeadImg() {
+        return headImg;
     }
 
-    public void setHead_img(String head_img) {
-        this.head_img = head_img;
+    public void setHeadImg(String headImg) {
+        this.headImg = headImg;
     }
 
-    public String getUser_level() {
-        return user_level;
+    public String getUserLevel() {
+        return userLevel;
     }
 
-    public void setUser_level(String user_level) {
-        this.user_level = user_level;
+    public void setUserLevel(String userLevel) {
+        this.userLevel = userLevel;
     }
 }

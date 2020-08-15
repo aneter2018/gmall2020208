@@ -18,7 +18,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserInfo> userList(){
 
-        List<UserInfo> userInfos = userInfoMapper.selectAll();
+        List<UserInfo> userInfos = userInfoMapper.selectAllUserAndAddress();
 
         return userInfos;
     }
