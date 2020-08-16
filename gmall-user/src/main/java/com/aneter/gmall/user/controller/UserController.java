@@ -1,8 +1,8 @@
 package com.aneter.gmall.user.controller;
 
 
-import com.aneter.gmall.user.bean.UserInfo;
-import com.aneter.gmall.user.service.UserService;
+import com.aneter.gmall.bean.UserInfo;
+import com.aneter.gmall.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

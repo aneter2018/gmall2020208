@@ -12,11 +12,11 @@
         where
             info.id = address.user_id
     </select>
-    <resultMap id="selectAllUserAndAddressMap" type="com.aneter.gmall.user.bean.UserInfo" autoMapping="true">
+    <resultMap id="selectAllUserAndAddressMap" type="com.aneter.gmall.bean.UserInfo" autoMapping="true">
 
         <result column="user_id" property="id"></result>
 
-        <collection property="userAddressList" ofType="com.aneter.gmall.user.bean.UserAddress" autoMapping="true">
+        <collection property="userAddressList" ofType="com.aneter.gmall.bean.UserAddress" autoMapping="true">
             <result column="address_id" property="id"></result>
         </collection>
 
