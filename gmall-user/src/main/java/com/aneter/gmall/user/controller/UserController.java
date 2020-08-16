@@ -1,5 +1,6 @@
 package com.aneter.gmall.user.controller;
 
+
 import com.aneter.gmall.user.bean.UserInfo;
 import com.aneter.gmall.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
